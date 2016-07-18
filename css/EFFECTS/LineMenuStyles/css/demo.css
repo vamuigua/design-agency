@@ -197,8 +197,9 @@ a:focus {
 .section--menu {
 	position: relative;
 	overflow: hidden;
-	min-height: 80vh;
-	padding: 2em 0 8em;
+	height:40%;
+	padding: 5em 0 5em;
+    background-color:rgba(0,0,0,0.9);
 }
 
 .break {
