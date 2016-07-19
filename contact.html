@@ -58,11 +58,11 @@
 						<span class="input__label-content input__label-content--kuro">Phone-Number</span>
 					</label>
 				</span>
+            <section class="content">
             <div class="box bg-3">
-					<button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Publish</button>
-					<button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Vote</button>
-					<button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Delete</button>
+					<button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">SEND</button>
 				</div>
+            </section>
 			</section>
         <!--KURO text function-->
         <script src="/css/EFFECTS/TextInputEffects/js/classie.js"></script>
@@ -98,6 +98,15 @@
 					if( ev.target.value.trim() === '' ) {
 						classie.remove( ev.target.parentNode, 'input--filled' );
 					}
+				}
+			})();
+		</script>
+        <!--Button function-->
+        <script>
+			(function() {
+				var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+				if(isSafari) {
+					document.getElementById('support-note').style.display = 'block';
 				}
 			})();
 		</script>
